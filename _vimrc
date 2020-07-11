@@ -168,7 +168,7 @@ if exists('+termguicolors')
                     nnoremap <F9> :!g++ -o  %:r.out % -std=c++11<Enter>
                     nnoremap <F10> :!./%:r.out
 
-                    :autocmd BufNewFile  *.cpp 0r ~/aarish/skeleton.cpp
+                    :autocmd BufNewFile  *.cpp 0r ~/aarish/skel.cpp
                     fun! TrimWhitespace()
                         let l:save = winsaveview()
                             keeppatterns %s/\s\+$//e
