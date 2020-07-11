@@ -165,10 +165,10 @@ if exists('+termguicolors')
                     nmap <leader>gh :diffget //3<CR>
                     nmap <leader>gu :diffget //2<CR>
                     nmap <leader>gs :G<CR>
-                    nnoremap <C-c> :!g++ -o  %:r.out % -std=c++11<Enter>
-                    nnoremap <C-x> :!./%:r.out
+                    nnoremap <F9> :!g++ -o  %:r.out % -std=c++11<Enter>
+                    nnoremap <F10> :!./%:r.out
 
-                    :autocmd BufNewFile  *.cpp 0r ~/vim/skeleton.cpp
+                    :autocmd BufNewFile  *.cpp 0r ~/aarish/skeleton.cpp
                     fun! TrimWhitespace()
                         let l:save = winsaveview()
                             keeppatterns %s/\s\+$//e
